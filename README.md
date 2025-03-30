@@ -63,8 +63,8 @@ Este proyecto utiliza variables de entorno para conectarse a la base de datos My
 ### Variables requeridas:
 
 - `DB_URL`: URL de conexión JDBC (ej: `jdbc:mysql://localhost:3306/bazar?useSSL=false&serverTimezone=UTC`)
-- `DB_USER`: Usuario de la base de datos (ej: `root`)
-- `DB_PASSWORD`: Contraseña del usuario (puede estar vacía)
+- `DB_USER`: Usuario de la base de datos
+- `DB_PASSWORD`: Contraseña del usuario
 
 ### 💡 ¿Cómo configurarlas en IntelliJ IDEA Community?
 
