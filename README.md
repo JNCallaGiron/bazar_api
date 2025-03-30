@@ -56,6 +56,30 @@ com.jairo.trabajoBazarF
 
 ---
 
+## ⚙️ Configuración de variables de entorno
+
+Este proyecto utiliza variables de entorno para conectarse a la base de datos MySQL.
+
+### Variables requeridas:
+
+- `DB_URL`: URL de conexión JDBC (ej: `jdbc:mysql://localhost:3306/bazar?useSSL=false&serverTimezone=UTC`)
+- `DB_USER`: Usuario de la base de datos (ej: `root`)
+- `DB_PASSWORD`: Contraseña del usuario (puede estar vacía)
+
+### 💡 ¿Cómo configurarlas en IntelliJ IDEA Community?
+
+1. En el menú superior derecho, hacé clic en el nombre del proyecto (ej: `TrabajoBazarFApplication`)
+2. Seleccioná **"Edit Configurations..."**
+3. En el campo **"Environment variables"**, agregá:
+
+```
+DB_URL=jdbc:mysql://localhost:3306/bazar?useSSL=false&serverTimezone=UTC;DB_USER=root;DB_PASSWORD=
+```
+
+4. Guardá y ejecutá normalmente
+
+---
+
 ## 🔁 Endpoints disponibles
 
 ### 📁 Productos
@@ -120,6 +144,24 @@ La aplicación fue testeada manualmente utilizando Postman. Se incluyen:
 
 ---
 
+## 📫 Colección Postman incluida
+
+Para facilitar el testeo de esta API, se incluye una colección de Postman con todos los endpoints del proyecto.
+
+### 📁 Archivo:
+`bazar_api_collection.postman_collection.json`
+
+### 🧪 ¿Cómo usarla?
+
+1. Abrí Postman  
+2. Hacé clic en **"Import"**  
+3. Seleccioná el archivo `bazar_api_collection.postman_collection.json` ubicado en este repositorio  
+4. Ejecutá las peticiones disponibles (productos, clientes, ventas, resumen diario, etc.)
+
+> 💡 Asegurate de tener corriendo el backend en `http://localhost:8080`
+
+---
+
 ## 🔐 Seguridad
 
 🔓 Este proyecto **no incluye autenticación**. Está pensado como un backend funcional de práctica para portfolio.  
@@ -139,5 +181,8 @@ Puede ampliarse fácilmente con **Spring Security y JWT** en el futuro.
 
 ## 👨‍💻 Autor
 
-**Jairo **  
+**Jairo Calla Giron**  
+📧 jairo@email.com  
+🔗 [https://github.com/JNCallaGiron](https://github.com/JNCallaGiron)
+
 
